@@ -22,11 +22,11 @@ public class Car : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Obstacle"))
         {
-            CarScene();
+            MainMenu();
         }
     }
 
-    void MainMenu()
+    public void MainMenu()
     {
         SceneManager.LoadScene("Main Menu");
     }

@@ -251,6 +251,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highScoreText: {fileID: 1656755331}
+  energyText: {fileID: 2047147742}
+  maxEnergy: 5
+  energyRechargeDuration: 1
 --- !u!1 &568324047
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,8 +447,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -198.81}
-  m_SizeDelta: {x: 0, y: 276.5118}
+  m_AnchoredPosition: {x: 0, y: -98.386536}
+  m_SizeDelta: {x: 0, y: 298.2701}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1656755331
 MonoBehaviour:
@@ -700,10 +703,10 @@ RectTransform:
   m_Father: {fileID: 2072578569}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -148}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0.000091552734, y: -8.2721}
+  m_SizeDelta: {x: -0.0002, y: 337.8559}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2047147742
 MonoBehaviour:
@@ -718,7 +721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -727,7 +730,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 65a1f087c8525de448da99ff715a3763, type: 3}
-    m_FontSize: 100
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -738,7 +741,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Play
+  m_Text: Play 5
 --- !u!222 &2047147743
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -781,11 +784,11 @@ RectTransform:
   m_Father: {fileID: 1676556849}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 42.836}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 244}
   m_SizeDelta: {x: 400, y: 200}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &2072578570
 MonoBehaviour:
   m_ObjectHideFlags: 0
