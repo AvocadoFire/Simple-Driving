@@ -28,13 +28,13 @@ public class Car : MonoBehaviour
 
     void MainMenu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Main Menu");
     }
 
     void CarScene()
     {
 
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Car Scene");
     }
 
 
