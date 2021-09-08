@@ -11,13 +11,11 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Text energyText;
     [SerializeField] private int maxEnergy;
     [SerializeField] private int energyRechargeDuration;
-   
-
-    private const string EnergyKey = "Energy";
-    private const string EnergyReadyKey = "EnergyReady";
 
     private int energy;
 
+    private const string EnergyKey = "Energy";
+    private const string EnergyReadyKey = "EnergyReady";
 
     private void Start()
     {
@@ -35,6 +33,7 @@ public class MainMenu : MonoBehaviour
 
         energy--;
         PlayerPrefs.SetInt (EnergyKey, energy);
+        SceneManager.LoadScene("Car Scene");
 
         if (energy == 0)
         {
@@ -42,7 +41,7 @@ public class MainMenu : MonoBehaviour
             PlayerPrefs.SetString(EnergyReadyKey, energyReady.ToString());
         }
 
-        SceneManager.LoadScene("Car Scene");
+        
     }
 
     private void UpdateHighScore()
