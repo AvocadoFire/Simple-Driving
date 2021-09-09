@@ -253,6 +253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highScoreText: {fileID: 1656755331}
   energyText: {fileID: 2047147742}
+  androidNotifHandler: {fileID: 472354627}
   maxEnergy: 5
   energyRechargeDuration: 1
 --- !u!114 &472354627
@@ -264,7 +265,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 472354624}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f24d17a6f960a154f8e9937390dc1e04, type: 3}
+  m_Script: {fileID: 11500000, guid: b5396b8b2b389bf49a3e311c31da949c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &568324047
