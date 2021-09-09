@@ -48,6 +48,9 @@ public class MainMenu : MonoBehaviour
         
     }
 
+
+
+
     private void UpdateHighScore()
     {
         int highScore = PlayerPrefs.GetInt(ScoreText.HighScoreKey, 0);

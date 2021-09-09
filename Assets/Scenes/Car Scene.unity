@@ -5294,7 +5294,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 65a1f087c8525de448da99ff715a3763, type: 3}
+    m_Font: {fileID: 12800000, guid: 9748056c778012440bb8465a5c1157d0, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -5306,7 +5306,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Your High Score: 888'
+  m_Text: 'Your High Score: 881'
 --- !u!222 &737933460
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14948,7 +14948,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 65a1f087c8525de448da99ff715a3763, type: 3}
+    m_Font: {fileID: 12800000, guid: 9748056c778012440bb8465a5c1157d0, type: 3}
     m_FontSize: 150
     m_FontStyle: 0
     m_BestFit: 0
@@ -14960,7 +14960,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 908
+  m_Text: 918
 --- !u!222 &1963256607
 CanvasRenderer:
   m_ObjectHideFlags: 0
