@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Text energyText;
     [SerializeField] private AndroidNotifHandler androidNotifHandler;
     [SerializeField] private int maxEnergy;
-    [SerializeField] private int energyRechargeDuration;
+    [SerializeField] private float energyRechargeDuration;
 
     private int energy;
 
@@ -26,6 +26,14 @@ public class MainMenu : MonoBehaviour
 
     public void Play()
     {
+
+        HandleEnergyRefill();
+        NotificationNeedEnergy();
+
+    }
+
+    private void NotificationNeedEnergy()
+    {
         if (energy < 1)
         {
             energyText.text = $"Not enough energy";
@@ -33,7 +41,7 @@ public class MainMenu : MonoBehaviour
         }
 
         energy--;
-        PlayerPrefs.SetInt (EnergyKey, energy);
+        PlayerPrefs.SetInt(EnergyKey, energy);
         SceneManager.LoadScene("Car Scene");
 
         if (energy == 0)
@@ -44,12 +52,7 @@ public class MainMenu : MonoBehaviour
             androidNotifHandler.ScheduleNotification(energyReady);
 #endif
         }
-
-        
     }
-
-
-
 
     private void UpdateHighScore()
     {

@@ -255,7 +255,7 @@ MonoBehaviour:
   energyText: {fileID: 2047147742}
   androidNotifHandler: {fileID: 472354627}
   maxEnergy: 5
-  energyRechargeDuration: 1
+  energyRechargeDuration: 0.2
 --- !u!114 &472354627
 MonoBehaviour:
   m_ObjectHideFlags: 0
