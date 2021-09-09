@@ -13,6 +13,8 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private int maxEnergy;
     [SerializeField] private float energyRechargeDuration;
 
+    DateTime energyReady;
+
     private int energy;
 
     private const string EnergyKey = "Energy";
@@ -22,6 +24,11 @@ public class MainMenu : MonoBehaviour
     {
         UpdateHighScore();
         HandleEnergyRefill();
+    }
+
+    private void Update()
+    {
+
     }
 
     public void Play()
@@ -67,7 +74,7 @@ public class MainMenu : MonoBehaviour
             string energyReadyString = PlayerPrefs.GetString(EnergyReadyKey, string.Empty);
             if (energyReadyString == string.Empty) { return; }
 
-            DateTime energyReady = DateTime.Parse(energyReadyString);
+            energyReady = DateTime.Parse(energyReadyString);
 
             if (DateTime.Now > energyReady)
             {
