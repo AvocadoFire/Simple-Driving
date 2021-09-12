@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.37254903, g: 0.4960617, b: 0.8509804, a: 1}
+  m_AmbientSkyColor: {r: 0.37254903, g: 0.8509804, b: 0.7963187, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -839,8 +839,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipe1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8eccab6f22216e448a20ca8c0964cc09, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8eccab6f22216e448a20ca8c0964cc09, type: 3}
+--- !u!1 &139720267 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8eccab6f22216e448a20ca8c0964cc09, type: 3}
+  m_PrefabInstance: {fileID: 139720266}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &139720268
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139720267}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7387706064836869012, guid: 8eccab6f22216e448a20ca8c0964cc09, type: 3}
 --- !u!1001 &140029199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8052,6 +8075,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipe2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4813d72cf2a01ad468be2263bc22ee55, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4813d72cf2a01ad468be2263bc22ee55, type: 3}
 --- !u!1001 &991884889
@@ -9118,15 +9145,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8aea6a9d87e118e46ad9994102a3aeda, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 131.14
+      value: 180.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8aea6a9d87e118e46ad9994102a3aeda, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.74
+      value: -0.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8aea6a9d87e118e46ad9994102a3aeda, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 272.53
+      value: 58.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8aea6a9d87e118e46ad9994102a3aeda, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9159,6 +9186,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8aea6a9d87e118e46ad9994102a3aeda, type: 3}
       propertyPath: m_Name
       value: Pipe4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8aea6a9d87e118e46ad9994102a3aeda, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8aea6a9d87e118e46ad9994102a3aeda, type: 3}
@@ -10865,6 +10896,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d21fc6863925110488a7827b1cf0c744, type: 3}
       propertyPath: m_Name
       value: Pipe3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d21fc6863925110488a7827b1cf0c744, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d21fc6863925110488a7827b1cf0c744, type: 3}
@@ -15682,6 +15717,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4011696358243804, guid: d5fadda3068c73c4188ca488912729dd, type: 3}
   m_PrefabInstance: {fileID: 1998825085}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1999500123 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8aea6a9d87e118e46ad9994102a3aeda, type: 3}
+  m_PrefabInstance: {fileID: 1093056744}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1999500124
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999500123}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7387706064836869012, guid: 8aea6a9d87e118e46ad9994102a3aeda, type: 3}
 --- !u!1001 &2005062612
 PrefabInstance:
   m_ObjectHideFlags: 0
