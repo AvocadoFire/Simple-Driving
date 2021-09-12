@@ -28,11 +28,7 @@ public class MainMenu : MonoBehaviour
 
     private void Update()
     {
-        if (energy > 0)
-        {
-            energyText.text = $"Play :{energy}:";
-        }
-        energyText.text = $"Not enough energy";
+        //HandleEnergyRefill();
     }
 
     public void Play()
