@@ -9,10 +9,15 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] private Text highScoreText;
     [SerializeField] private Text energyText;
+    [SerializeField] private Button playButton;
     [SerializeField] private AndroidNotifHandler androidNotifHandler;
     [SerializeField] private iOSNotificationHandler iOSNotificationHandler;
     [SerializeField] private int maxEnergy;
     [SerializeField] private float energyRechargeDuration;
+   //[SerializeField] Text timerDisplay;
+   //[SerializeField] int decimalPlaces = 0;
+
+   //float timeLeft = 30.0f;
 
     DateTime energyReady;
     private int energy;
@@ -22,14 +27,17 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
+        OnApplicationFocus(true);
+    }
+    private void OnApplicationFocus(bool hasFocus)
+    {
+        if (!hasFocus) { return; }
+        CancelInvoke();
         UpdateHighScore();
         HandleEnergyRefill();
     }
 
-    private void Update()
-    {
-        //HandleEnergyRefill();
-    }
+
 
     public void Play()
     {
@@ -67,7 +75,7 @@ public class MainMenu : MonoBehaviour
         int highScore = PlayerPrefs.GetInt(ScoreText.HighScoreKey, 0);
         highScoreText.text = $"Your High Score:\n{highScore}";
     }
-    private void HandleEnergyRefill()
+    public void HandleEnergyRefill()
     {
         energy = PlayerPrefs.GetInt(EnergyKey, maxEnergy); //default to max
         if (energy == 0)
@@ -82,7 +90,18 @@ public class MainMenu : MonoBehaviour
                 energy = maxEnergy;
                 PlayerPrefs.SetInt(EnergyKey, energy);
             }
+            else
+            {
+                Invoke(nameof(EnergyRecharged), (energyReady - DateTime.Now).Seconds);
+            }
         }
         energyText.text = $"Play :{energy}:";
+    }
+
+    private void EnergyRecharged()
+    {
+        energy = maxEnergy;
+        PlayerPrefs.SetInt(EnergyKey, energy);
+        energyText.text = $"Play ({energy})";
     }
 }
