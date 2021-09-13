@@ -5843,7 +5843,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &740081879
 RectTransform:
@@ -11217,7 +11217,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 1, g: 0.5235849, b: 0.5235849, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -11270,7 +11270,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 090cd6ce5b3a1404ca68c911e6518bab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6c839943b5891074e9a515efcf4b420c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17300,6 +17300,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e13a295079846c48b6e88ad1ee433d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  button: {fileID: 1279894977}
+  buttonImageOriginal: {fileID: 21300000, guid: 6c839943b5891074e9a515efcf4b420c, type: 3}
+  buttonImagePaused: {fileID: 21300000, guid: d6bbabbf0f454624e8e6989ba1b5c8b7, type: 3}
 --- !u!224 &2142796372
 RectTransform:
   m_ObjectHideFlags: 0
